@@ -1,0 +1,75 @@
+# Pliki systemowe
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Pliki logów
+*.log
+logs/
+
+# Pliki tymczasowe
+*.tmp
+*.temp
+.tmp/
+.temp/
+
+# Katalogi node_modules (jeśli używasz Node.js)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Pliki środowiskowe
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Pliki IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Pliki Git
+.git/
+.gitignore
+
+# Pliki Docker
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# Pliki dokumentacji
+README.md
+*.md
+docs/
+
+# Pliki testów
+test/
+tests/
+*.test.js
+*.spec.js
+
+# Pliki backup
+*.bak
+*.backup
+
+# Pliki cache
+.cache/
+*.cache
+
+# Pliki build
+dist/
+build/
+out/
+
+# Pliki coverage
+coverage/
+.nyc_output/
+
+# Pliki lock
+package-lock.json
+yarn.lock 

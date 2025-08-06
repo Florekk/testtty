@@ -5,3 +5,5 @@ services:
     image: nginx:alpine
     ports:
       - "56632:80"
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html
