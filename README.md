@@ -20,12 +20,20 @@ testtty/
 
 ## Uruchomienie
 
+### Lokalnie z Docker Compose:
 1. Upewnij się, że masz zainstalowany Docker i Docker Compose
 2. W katalogu projektu uruchom:
    ```bash
    docker-compose up --build -d
    ```
 3. Otwórz przeglądarkę i przejdź do: `http://localhost:56632`
+
+### Z Portainer (Stack z Git):
+1. W Portainer przejdź do **Stacks** → **Add stack**
+2. Wybierz **Repository** i podaj URL do repozytorium Git
+3. Ustaw **Name**: `testtty-web`
+4. Kliknij **Deploy the stack**
+5. Otwórz przeglądarkę i przejdź do: `http://raspberrypi2:56632`
 
 **Uwaga:** Użyj flagi `--build` przy pierwszym uruchomieniu lub gdy zmienisz pliki HTML.
 

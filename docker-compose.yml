@@ -6,9 +6,6 @@ services:
     ports:
       - "56632:80"
     restart: unless-stopped
-    deploy:
-      resources:
-        limits:
-          memory: 256M
-        reservations:
-          memory: 128M
+    environment:
+      - NGINX_HOST=localhost
+      - NGINX_PORT=80
