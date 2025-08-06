@@ -5,3 +5,10 @@ services:
     build: .
     ports:
       - "56632:80"
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+        reservations:
+          memory: 128M

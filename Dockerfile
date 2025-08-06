@@ -1,4 +1,4 @@
-# Użyj oficjalnego obrazu Nginx Alpine
+# Użyj oficjalnego obrazu Nginx Alpine (kompatybilny z ARM64)
 FROM nginx:alpine
 
 # Skopiuj pliki HTML do katalogu domyślnego Nginx
