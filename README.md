@@ -23,9 +23,11 @@ testtty/
 1. Upewnij się, że masz zainstalowany Docker i Docker Compose
 2. W katalogu projektu uruchom:
    ```bash
-   docker-compose up -d
+   docker-compose up --build -d
    ```
 3. Otwórz przeglądarkę i przejdź do: `http://localhost:56632`
+
+**Uwaga:** Użyj flagi `--build` przy pierwszym uruchomieniu lub gdy zmienisz pliki HTML.
 
 ## Zatrzymanie
 

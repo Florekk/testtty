@@ -44,7 +44,6 @@ docker-compose*.yml
 
 # Pliki dokumentacji
 README.md
-*.md
 docs/
 
 # Pliki testów
