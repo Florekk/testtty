@@ -29,11 +29,27 @@ testtty/
 3. Otwórz przeglądarkę i przejdź do: `http://localhost:56632`
 
 ### Z Portainer (Stack z Git):
+
+#### Opcja 1: Budowanie obrazu (zalecane)
 1. W Portainer przejdź do **Stacks** → **Add stack**
 2. Wybierz **Repository** i podaj URL do repozytorium Git
 3. Ustaw **Name**: `testtty-web`
 4. Kliknij **Deploy the stack**
 5. Otwórz przeglądarkę i przejdź do: `http://raspberrypi2:56632`
+
+#### Opcja 2: Budowanie obrazu (jeśli Opcja 1 nie działa)
+1. W Portainer przejdź do **Stacks** → **Add stack**
+2. Wybierz **Repository** i podaj URL do repozytorium Git
+3. W **Web editor** skopiuj zawartość `docker-compose.build.yml`
+4. Ustaw **Name**: `testtty-web-build`
+5. Kliknij **Deploy the stack**
+
+#### Opcja 3: Ręczne wdrożenie
+1. W Portainer przejdź do **Stacks** → **Add stack**
+2. Wybierz **Web editor**
+3. Skopiuj zawartość `docker-compose.yml`
+4. Ustaw **Name**: `testtty-web-manual`
+5. Kliknij **Deploy the stack`
 
 **Uwaga:** Użyj flagi `--build` przy pierwszym uruchomieniu lub gdy zmienisz pliki HTML.
 
