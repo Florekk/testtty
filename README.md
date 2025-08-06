@@ -37,11 +37,11 @@ testtty/
 4. Kliknij **Deploy the stack**
 5. Otwórz przeglądarkę i przejdź do: `http://raspberrypi2:56632`
 
-#### Opcja 2: Budowanie obrazu (jeśli Opcja 1 nie działa)
+#### Opcja 2: Volume mapping całego katalogu
 1. W Portainer przejdź do **Stacks** → **Add stack**
 2. Wybierz **Repository** i podaj URL do repozytorium Git
-3. W **Web editor** skopiuj zawartość `docker-compose.build.yml`
-4. Ustaw **Name**: `testtty-web-build`
+3. W **Web editor** skopiuj zawartość `docker-compose.volume.yml`
+4. Ustaw **Name**: `testtty-web-volume`
 5. Kliknij **Deploy the stack**
 
 #### Opcja 3: Ręczne wdrożenie

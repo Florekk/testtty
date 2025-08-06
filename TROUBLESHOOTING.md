@@ -2,6 +2,8 @@
 
 ## Błąd: "failed to list workers: Unavailable: connection closed before server preface received"
 
+## Błąd: "error mounting "/data/compose/42/index.html" to rootfs: not a directory"
+
 ### Przyczyny:
 1. **Brak zasobów** - Raspberry Pi ma ograniczone zasoby
 2. **Problem z Docker daemon** - Połączenie zostało przerwane
@@ -42,8 +44,19 @@ Edytuj `/etc/docker/daemon.json`:
 }
 ```
 
-#### 4. Użyj volume mapping zamiast budowania
+#### 4. Użyj budowania obrazu zamiast volume mapping
 W `docker-compose.yml`:
+```yaml
+services:
+  web:
+    build: .
+    ports:
+      - "56632:80"
+    restart: unless-stopped
+```
+
+#### 5. Alternatywnie: Volume mapping całego katalogu
+W `docker-compose.volume.yml`:
 ```yaml
 services:
   web:
@@ -51,7 +64,7 @@ services:
     ports:
       - "56632:80"
     volumes:
-      - ./index.html:/usr/share/nginx/html/index.html
+      - .:/usr/share/nginx/html
 ```
 
 #### 5. Sprawdź logi Portainer
